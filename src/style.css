@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap');
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	min-width: 100vh;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #dd6321;
+	margin-bottom: 10px;
+}
+
+p {
+	font-family: 'Poppins' sans-serif;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}    
+
+button {
+	background: #d4652a;
+	color:	#fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	border: none;
+	padding: 12px 24px;
+}
+
+button:hover {
+	background: #dd632160;
+}
+
+/******************************** Hero ********************************/
+
+.hero {
+	background: url(../src/img/coffee.jpeg) no-repeat center;
+	background-size: cover;
+	position: relative;
+	height: 520px;
+}
+
+.hero .hero-filter {
+	background: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.hero .hero-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-text h1 {
+	color: #1d2528;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 54px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.hero-text p{
+	width: auto;
+}
+
+/******************************** About ********************************/
+
+.about {
+	background: #1d2528;
+	color: #fff;
+	height: 520px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about .about-text {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-text p {
+	width: 50%;
+}
+
+.about .about-icons {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.about-icons li {
+	width: 30%;
+	color: #985836;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 52px 0 72px;
+}
+
+.about-icons li i{
+	margin-bottom: 20px;
+	font-size: 32px;
+}
+
+/******************************** Product ********************************/
+
+.product .product-text-img {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: stretch;
+	justify-items: stretch;
+}
+
+.product-text-img > .coffee-img {
+	grid-column: 1 / 2;
+}
+
+.product-text-img > .coffee {
+	grid-row: 1;
+	grid-column: 2 / 3;
+}
+
+.product .product-text  {
+	color: #1d2528;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.product-text-img .bean {
+	margin: 0 15%;
+}
+
+.product-text-img .coffee {
+	background: #ddd8d480;
+	padding: 20px;
+}
+
+.product-text-img .coffee p {
+	width: 80%;
+}
+
+.product-text p {
+	color: #1d2528;
+	margin-bottom: 40px;
+}
+
+/******************************** Footer ********************************/
+
+.footer{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.footer .footer-text {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 10% 15% 15%;
+}
+
+.footer .open {
+	background: url(../src/img/coffee2.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+}
+
+.footer .open-filter {
+	background: linear-gradient(90deg, #1d2528ef, #1d2528e0);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.footer .contact {
+	background: #1d2528;
+}
