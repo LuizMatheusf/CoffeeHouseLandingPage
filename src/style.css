@@ -1,4 +1,4 @@
-* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -83,8 +83,8 @@ p {
 }
 
 img {
-   	max-width: 100%;
-    	display: block;
+    max-width: 100%;
+    display: block;
 }    
 
 button {
@@ -132,12 +132,12 @@ button:hover {
 	letter-spacing: 3px;
 	font-size: 54px;
 	font-weight: 600;
-	margin-bottom: 20px;
+	margin: 0 0 20px;
 }
 
 .hero-text p {
 	width: 90%;
-    	text-align: center;
+    text-align: center;
 }
 
 /******************************** About ********************************/
@@ -167,6 +167,7 @@ button:hover {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	padding 0;
 }
 
 .about-icons li {
@@ -181,8 +182,8 @@ button:hover {
 }
 
 .about-icons li i {
-	margin-bottom: 20px;
 	font-size: 32px;
+	margin: 0 0 20px;
 }
 
 /******************************** Product ********************************/
@@ -203,12 +204,12 @@ button:hover {
 	grid-column: 2 / 3;
 }
 
-.product .product-text  {
+.product .product-text {
 	color: #1d2528;
 	display: flex;
-    	flex-direction: column;
-    	align-items: flex-start;
-    	justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }	
 
 .product-text-img .bean {
@@ -227,7 +228,7 @@ button:hover {
 
 .product-text p {
 	color: #1d2528;
-	margin-bottom: 40px;
+	margin: 0 0 40px;
 }
 
 /******************************** Footer ********************************/
@@ -286,11 +287,11 @@ button:hover {
 		align-items: stretch;
 	}
 
-	.product .product-text {
+	.product .product-text  {
 		background: #fff;
 		height: 520px;
 		padding: 20px 0;
-    		margin: 0 15%;
+    	margin: 0 15%;
 	}
 
 	.product-text-img .coffee p {
@@ -324,12 +325,16 @@ button:hover {
 		width: 90%;
 	}
 
+	.about-icons li {
+		margin: 42px 0 62px;
+	}
+
 	.about-icons li i {
 		font-size: 42px;
 	}
 
 	.footer {
-		height: 1200px;
+		height: 1100px;
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 	}
