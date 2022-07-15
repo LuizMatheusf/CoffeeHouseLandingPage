@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -55,6 +55,7 @@ table {
 /* End reset */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap');
+
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	min-width: 100vh;
@@ -75,7 +76,7 @@ h3 {
 }
 
 p {
-	font-family: 'Poppins' sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	line-height: 22px;
 	margin-bottom: 20px;
 }
@@ -133,8 +134,9 @@ button:hover {
 	margin-bottom: 20px;
 }
 
-.hero-text p{
-	width: auto;
+.hero-text p {
+	width: 90%;
+    text-align: center;
 }
 
 /******************************** About ********************************/
@@ -142,7 +144,7 @@ button:hover {
 .about {
 	background: #1d2528;
 	color: #fff;
-	height: 520px;
+	height: 540px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -157,7 +159,7 @@ button:hover {
 }
 
 .about-text p {
-	width: 50%;
+	width: 65%;
 }
 
 .about .about-icons {
@@ -167,7 +169,7 @@ button:hover {
 }
 
 .about-icons li {
-	width: 30%;
+	width: 25%;
 	color: #985836;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -206,9 +208,10 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-}
+}	
 
 .product-text-img .bean {
+	padding: 20px 0;
 	margin: 0 15%;
 }
 
@@ -252,10 +255,90 @@ button:hover {
 .footer .open-filter {
 	background: linear-gradient(90deg, #1d2528ef, #1d2528e0);
 	position: absolute;
-	width: 100%;
+	width: 101%;
 	height: 100%;
 }
 
 .footer .contact {
 	background: #1d2528;
+}
+
+/******************************** Media Query ********************************/
+
+@media (max-width: 780px) {
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	.product .product-text-img {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.product .product-text  {
+		background: #fff;
+		height: 520px;
+		padding: 20px 0;
+    	margin: 0 15%;
+	}
+
+	.product-text-img .coffee p {
+		width: 100%;
+	}	
+}
+
+/******************************** Media Query ********************************/
+
+@media (max-width: 600px) {
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+
+	p {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	button {
+		font-size: 22px;
+		padding: 18px 30px;
+	}
+
+	.about-text p {
+		width: 90%;
+	}
+
+	.about-icons li i {
+		font-size: 42px;
+	}
+
+	.footer {
+		height: 1200px;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.footer-text {
+		margin: 15% !important;
+	}
+
+	.footer .open-filter {
+		height: 101%;
+		width: 100%;
+	}
 }
