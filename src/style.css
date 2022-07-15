@@ -179,7 +179,7 @@ button:hover {
 	margin: 52px 0 72px;
 }
 
-.about-icons li i{
+.about-icons li i {
 	margin-bottom: 20px;
 	font-size: 32px;
 }
@@ -231,7 +231,7 @@ button:hover {
 
 /******************************** Footer ********************************/
 
-.footer{
+.footer {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -285,7 +285,7 @@ button:hover {
 		align-items: stretch;
 	}
 
-	.product .product-text  {
+	.product .product-text {
 		background: #fff;
 		height: 520px;
 		padding: 20px 0;
