@@ -59,26 +59,27 @@ table {
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	min-width: 100vh;
+	margin: 0 auto;
 }
 
 h2 {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 28px;
-	margin-bottom: 20px;
+	margin: 0 0 20px;
 }
 
 h3 {
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #dd6321;
-	margin-bottom: 10px;
+	margin: 0 0 10px;
 }
 
 p {
 	font-family: 'Poppins', sans-serif !important;
 	line-height: 22px;
-	margin-bottom: 20px;
+	margin: 0 0 20px;
 }
 
 img {
